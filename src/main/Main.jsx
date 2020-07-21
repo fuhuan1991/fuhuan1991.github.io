@@ -105,7 +105,6 @@ class Main extends Component {
 
         <h1 className='white_font sub_title'>
           2. Chalkboard Note &nbsp;
-          <a href="http://chalkboardnote-env.eba-6j3tsndi.us-east-2.elasticbeanstalk.com">Try it!</a>
         </h1>
         <div className='slider'>
           <Carousel ref={node => (this.carousel = node)} autoplay>
