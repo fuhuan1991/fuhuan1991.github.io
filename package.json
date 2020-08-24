@@ -20,8 +20,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "move": "mv build/* ./",
-    "clear": "rm -rf ./static/* && rm -rf precache-manifest.*.js",
+    "move": "mv ./build ./docs/",
+    "clear": "rm -rf ./docs/*",
     "build+": "npm run clear && npm run build && npm run move",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
