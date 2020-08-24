@@ -198,7 +198,7 @@ class Main extends Component {
           <a className='info_link' href='https://fuhuan1991.github.io/Reversi-Game/index.html'>Try it!</a>
         </h2>
         {/* <img src={gameImg} alt='cannot be displayed due to network reasons'></img> */}
-        <div className='slider' style={{paddingLeft: '50px', width: '800px'}}>
+        <div className='slider' style={{paddingLeft: '5%', width: '80%'}}>
           <Carousel ref={node => (this.carousel = node)} autoplay>
             <img src={g1} alt='cannot be displayed due to network reasons'></img>
             <img src={g2} alt='cannot be displayed due to network reasons'></img>
@@ -240,7 +240,7 @@ class Main extends Component {
           <a className='info_link' href='http://easypoll.us-east-2.elasticbeanstalk.com'>Try it!</a>
         </h2>
         {/* <img src={gameImg} alt='cannot be displayed due to network reasons'></img> */}
-        <div className='slider'>
+        <div className='slider' style={{paddingLeft: '5%', width: '80%'}}>
           <Carousel ref={node => (this.carousel = node)} autoplay>
             <img src={e1} alt='cannot be displayed due to network reasons'></img>
             <img src={e2} alt='cannot be displayed due to network reasons'></img>
