@@ -21,6 +21,9 @@ import m2 from './img/m2.png';
 import m3 from './img/m3.png';
 import m4 from './img/m4.png';
 import m5 from './img/m5.png';
+import k1 from './img/k1.png';
+import k2 from './img/k2.png';
+import k3 from './img/k3.png';
 
 
 class Main extends Component {
@@ -67,10 +70,14 @@ class Main extends Component {
           <a className='info_link' href='https://github.com/fuhuan1991'>My GitHub</a>
         </p>
 
+        <br/><br/><br/>
+
         <h1 className='white_font' style={{marginBottom: '0px'}}>PROJECTS</h1>
         <hr className='line'/>
 
-        <h1 className='white_font sub_title'>1. BrightLab Customer Management Plan <a className='info_link' href='https://www.brightlab.com/'>About BrightLab</a><br/> </h1>
+        <h2 className='white_font sub_title'>1. BrightLab Customer Management Plan 
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a className='info_link' href='https://www.brightlab.com/'>About BrightLab</a><br/> </h2>
         <div className='slider'>
           <Carousel ref={node => (this.carousel = node)} autoplay>
             <img src={m1} alt='cannot be displayed due to network reasons'></img>
@@ -110,7 +117,10 @@ class Main extends Component {
 
 
 
-        <h1 className='white_font sub_title'>2. GrowingIO.com <a className='info_link' href='https://www.growingio.com/'>Visit this site</a><br/> </h1>
+        <h2 className='white_font sub_title'>2. GrowingIO.com 
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a className='info_link' href='https://www.growingio.com/'>Visit this site</a><br/> 
+        </h2>
         <div className='slider'>
           <Carousel ref={node => (this.carousel = node)} autoplay>
             <img src={p0} alt='cannot be displayed due to network reasons'></img>
@@ -150,22 +160,26 @@ class Main extends Component {
 
 
 
-        <h1 className='white_font sub_title'>
-          3. Chalkboard Note &nbsp;
-        </h1>
+        <h2 className='white_font sub_title'>
+          3. MDNote &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a className='info_link' href='https://fuhuan1991.github.io/markdown-Note/#/'>Try it!</a>
+        </h2>
         <div className='slider'>
           <Carousel ref={node => (this.carousel = node)} autoplay>
-            <img src={n1} alt='cannot be displayed due to network reasons'></img>
-            <img src={n2} alt='cannot be displayed due to network reasons'></img>
-            <img src={n3} alt='cannot be displayed due to network reasons'></img>
-            <img src={n4} alt='cannot be displayed due to network reasons'></img>
+            <img src={k1} alt='cannot be displayed due to network reasons'></img>
+            <img src={k2} alt='cannot be displayed due to network reasons'></img>
+            <img src={k3} alt='cannot be displayed due to network reasons'></img>
+            {/* <img src={n4} alt='cannot be displayed due to network reasons'></img> */}
           </Carousel>
         </div>
         <h2 className='white_font'>About this project</h2>
         <hr className='line'/>
         <p className='white_font'>
-          This is one of my personal projects. It's an online note management application, you can create, store and modify your notes.<br />
-          There is a default account with some existing notes, name: guest, password: 123.<br />
+          This is one of my personal projects. It's a note management application that supports full Markdown syntax. 
+          <a className='info_link' href='https://en.wikipedia.org/wiki/Markdown'>(What is Markdown?)</a><br/>
+          In this application, you can keep multiple notebooks(folders) and manage their content through a folder view.
+          When editing your note, you can type in Markdown script manually or use the predefined templates. 
+          All the scripts will be compiled and the result will be displayed in real time. 
         </p>
         <h2 className='white_font' style={{marginBottom: '0px'}}>Tech stack</h2>
         <p className='white_font'>Code technologies involved while developing this project.</p>
@@ -173,23 +187,18 @@ class Main extends Component {
         <ul className='list'>
           <li>React</li>
           <li>Javascript ES6</li>
-          <li>CSS3</li>
-          <li>Spring Boot</li>
-          <li>Spring Scurity</li>
-          <li>JWT</li>
-          <li>PostgreSQL</li>
-          <li>Docker</li>
-          <li>AWS</li>
+          <li>Codemirror</li>
+          <li>IndexedDB</li>
         </ul>
 
 
 
-        <h1 className='white_font sub_title'>
-          4. Reversi Game &nbsp;
+        <h2 className='white_font sub_title'>
+          4. Reversi Game &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <a className='info_link' href='https://fuhuan1991.github.io/Reversi-Game/index.html'>Try it!</a>
-        </h1>
+        </h2>
         {/* <img src={gameImg} alt='cannot be displayed due to network reasons'></img> */}
-        <div className='slider'>
+        <div className='slider' style={{paddingLeft: '50px', width: '800px'}}>
           <Carousel ref={node => (this.carousel = node)} autoplay>
             <img src={g1} alt='cannot be displayed due to network reasons'></img>
             <img src={g2} alt='cannot be displayed due to network reasons'></img>
@@ -226,10 +235,10 @@ class Main extends Component {
         </ul>
 
 
-        <h1 className='white_font sub_title'>
-          5. EasyPoll &nbsp;
+        <h2 className='white_font sub_title'>
+          5. EasyPoll &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <a className='info_link' href='http://easypoll.us-east-2.elasticbeanstalk.com'>Try it!</a>
-        </h1>
+        </h2>
         {/* <img src={gameImg} alt='cannot be displayed due to network reasons'></img> */}
         <div className='slider'>
           <Carousel ref={node => (this.carousel = node)} autoplay>
@@ -241,7 +250,7 @@ class Main extends Component {
         <h2 className='white_font'>About this project</h2>
         <hr className='line'/>
         <ul className='list'>
-          <li>This is an online polling application. You can start a poll among your friends within 1 min.</li>
+          <li>This is an online polling application, one of my personal projects. You can start a poll among your friends within 1 min.</li>
           <li>No need to create an account.</li>
           <li>All you need to do is: Setup questions(single choice or multiple choice), share links with your friends and 
             watch the result.</li>
@@ -257,6 +266,39 @@ class Main extends Component {
           <li>Flyway</li>
           <li>BootStrap</li>
           <li>React</li>
+        </ul>
+
+
+        <h2 className='white_font sub_title'>
+          6. Chalkboard Note &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </h2>
+        <div className='slider'>
+          <Carousel ref={node => (this.carousel = node)} autoplay>
+            <img src={n1} alt='cannot be displayed due to network reasons'></img>
+            <img src={n2} alt='cannot be displayed due to network reasons'></img>
+            <img src={n3} alt='cannot be displayed due to network reasons'></img>
+            <img src={n4} alt='cannot be displayed due to network reasons'></img>
+          </Carousel>
+        </div>
+        <h2 className='white_font'>About this project</h2>
+        <hr className='line'/>
+        <p className='white_font'>
+          This is one of my personal projects. It's an online note management application, you can create, store and modify your notes.<br />
+          There is a default account with some existing notes, name: guest, password: 123.<br />
+        </p>
+        <h2 className='white_font' style={{marginBottom: '0px'}}>Tech stack</h2>
+        <p className='white_font'>Code technologies involved while developing this project.</p>
+        <hr className='line'/>
+        <ul className='list'>
+          <li>React</li>
+          <li>Javascript ES6</li>
+          <li>CSS3</li>
+          <li>Spring Boot</li>
+          <li>Spring Scurity</li>
+          <li>JWT</li>
+          <li>PostgreSQL</li>
+          <li>Docker</li>
+          <li>AWS</li>
         </ul>
       </div>
     )
