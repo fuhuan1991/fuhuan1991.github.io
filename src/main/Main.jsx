@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './main.scss';
-import { Carousel } from 'antd';
+import { Carousel, Icon } from 'antd';
 import p0 from './img/home_page.png';
 import p1 from './img/dashboard.png';
 import p2 from './img/data_management.png';
@@ -50,15 +50,11 @@ class Main extends Component {
   render () {
     return (
       <div className='main'>
-        <h1 className='white_font' 
+        <h1 className='white_font main_title' 
           style={{textAlign: 'center', marginTop: '40px'}}>
-            Hello, I'm Huan Fu
+            HUAN FU - SOFTWARE ENGINEER
         </h1>
-        <h1 className='white_font' 
-          style={{textAlign: 'center'}}>
-            I am a programmer
-        </h1>
-        <h1 className='white_font' style={{marginBottom: '0px'}}>ABOUT ME</h1>
+        <h1 className='white_font main_title' style={{marginBottom: '0px'}}>ABOUT ME</h1>
         <hr className='line'/>
         <p className='white_font'>
           Enthusiastic Software Engineer with 2 years of developing experience of data platform and E-commerce web applications, 
@@ -66,18 +62,18 @@ class Main extends Component {
           Currently, I'm a master’s student in computer science at Tufts and am very passionate in applying
           programing skills to create better experience for users. I have tackled 
           complex technical problems and demonstrated strong programming skills at Lenovo and GrowingIO.
-          Last Summer, I worked as a software engineer intern at MilliporeSigma.&nbsp;&nbsp;
-          <a className='info_link' href='https://github.com/fuhuan1991'>My GitHub</a>
+          In 2020, I worked as a software engineer intern at MilliporeSigma.&nbsp;&nbsp;
+          <a className='info_link' href='https://github.com/fuhuan1991'><Icon type="github" />My GitHub</a>
         </p>
 
         <br/><br/><br/>
 
-        <h1 className='white_font' style={{marginBottom: '0px'}}>PROJECTS</h1>
+        <h1 className='white_font main_title' style={{marginBottom: '0px'}}>PROJECTS</h1>
         <hr className='line'/>
 
         <h2 className='white_font sub_title'>1. BrightLab Customer Management Plan 
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <a className='info_link' href='https://www.brightlab.com/'>About BrightLab</a><br/> </h2>
+          &nbsp;&nbsp;&nbsp;
+          <a className='info_link' href='https://www.brightlab.com/'>About BrightLab <Icon type="right" /></a><br/> </h2>
         <div className='slider'>
           <Carousel ref={node => (this.carousel = node)} autoplay>
             <img src={m1} alt='cannot be displayed due to network reasons'></img>
@@ -118,8 +114,8 @@ class Main extends Component {
 
 
         <h2 className='white_font sub_title'>2. GrowingIO.com 
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <a className='info_link' href='https://www.growingio.com/'>Visit this site</a><br/> 
+          &nbsp;&nbsp;&nbsp;
+          <a className='info_link' href='https://www.growingio.com/'>Visit this site<Icon type="right" /></a><br/> 
         </h2>
         <div className='slider'>
           <Carousel ref={node => (this.carousel = node)} autoplay>
@@ -161,8 +157,8 @@ class Main extends Component {
 
 
         <h2 className='white_font sub_title'>
-          3. MDNote &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <a className='info_link' href='https://fuhuan1991.github.io/markdown-Note/#/'>Try it!</a>
+          3. MDNote &nbsp;&nbsp;&nbsp;
+          <a className='info_link' href='https://fuhuan1991.github.io/markdown-Note/#/'>Try it!<Icon type="right" /></a>
         </h2>
         <div className='slider'>
           <Carousel ref={node => (this.carousel = node)} autoplay>
@@ -194,8 +190,8 @@ class Main extends Component {
 
 
         <h2 className='white_font sub_title'>
-          4. Reversi Game &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <a className='info_link' href='https://fuhuan1991.github.io/Reversi-Game/index.html'>Try it!</a>
+          4. Reversi Game &nbsp;&nbsp;&nbsp;
+          <a className='info_link' href='https://fuhuan1991.github.io/Reversi-Game/index.html'>Try it!<Icon type="right" /></a>
         </h2>
         {/* <img src={gameImg} alt='cannot be displayed due to network reasons'></img> */}
         <div className='slider' style={{paddingLeft: '5%', width: '80%'}}>
@@ -236,8 +232,8 @@ class Main extends Component {
 
 
         <h2 className='white_font sub_title'>
-          5. EasyPoll &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <a className='info_link' href='http://easypoll.us-east-2.elasticbeanstalk.com'>Try it!</a>
+          5. EasyPoll &nbsp;&nbsp;&nbsp;
+          <a className='info_link' href='http://easypoll.us-east-2.elasticbeanstalk.com'>Try it!<Icon type="right" /></a>
         </h2>
         {/* <img src={gameImg} alt='cannot be displayed due to network reasons'></img> */}
         <div className='slider' style={{paddingLeft: '5%', width: '80%'}}>
@@ -262,15 +258,15 @@ class Main extends Component {
         <ul className='list'>
           <li>Spring boot</li>
           <li>Thymeleaf</li>
-          <li>PostgreSQL</li>
-          <li>Flyway</li>
-          <li>BootStrap</li>
           <li>React</li>
+          <li>PostgreSQL</li>
+          <li>BootStrap</li>
+          <li>AWS</li>
         </ul>
 
 
         <h2 className='white_font sub_title'>
-          6. Chalkboard Note &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          6. Chalkboard Note &nbsp;&nbsp;&nbsp;
         </h2>
         <div className='slider'>
           <Carousel ref={node => (this.carousel = node)} autoplay>
