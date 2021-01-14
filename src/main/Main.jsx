@@ -63,10 +63,11 @@ class Main extends Component {
           programing skills to create better experience for users. I have tackled 
           complex technical problems and demonstrated strong programming skills at Lenovo and GrowingIO.
           In 2020, I worked as a software engineer intern at MilliporeSigma.&nbsp;&nbsp;
-          <a className='info_link' href='https://github.com/fuhuan1991'><Icon type="github" />My GitHub</a>
+          <a className='info_link' href='https://github.com/fuhuan1991'><Icon type="github" /></a>&nbsp;&nbsp;
+          <a className='info_link' href='https://www.linkedin.com/in/huan-fu-889557191/'><Icon type="linkedin" /></a>
         </p>
 
-        <br/><br/><br/>
+        <br/><br/>
 
         <h1 className='white_font main_title' style={{marginBottom: '0px'}}>PROJECTS</h1>
         <hr className='line'/>
@@ -109,7 +110,7 @@ class Main extends Component {
           <li>Docker</li>
           <li>Kubernetes</li>
         </ul>
-
+        <div className='gap'></div>
 
 
 
@@ -153,7 +154,7 @@ class Main extends Component {
           <li>Webpack & Rollup</li>
           <li>Docker</li>
         </ul>
-
+        <div className='gap'></div>
 
 
         <h2 className='white_font sub_title'>
@@ -186,7 +187,7 @@ class Main extends Component {
           <li>Codemirror</li>
           <li>IndexedDB</li>
         </ul>
-
+        <div className='gap'></div>
 
 
         <h2 className='white_font sub_title'>
@@ -229,6 +230,7 @@ class Main extends Component {
           <li>Javascript ES6/TypeScript</li>
           <li>CSS3/Sass</li>
         </ul>
+        <div className='gap'></div>
 
 
         <h2 className='white_font sub_title'>
@@ -263,6 +265,8 @@ class Main extends Component {
           <li>BootStrap</li>
           <li>AWS</li>
         </ul>
+        <div className='gap'></div>
+
 
 
         <h2 className='white_font sub_title'>
@@ -296,6 +300,24 @@ class Main extends Component {
           <li>Docker</li>
           <li>AWS</li>
         </ul>
+        <div className='gap'></div>
+
+        <hr className='footer-line'/>
+        <div className='footer'>
+          <div className='footer-col'>
+            <h2 className='white_font sub_title'>Contact me at</h2>
+            <p className='white_font'>huanfu2019@gmail.com</p>
+          </div>
+          <div className='footer-col'>
+            <h2 className='white_font sub_title'>Around the Web</h2>
+            <a className='info_link' href='https://github.com/fuhuan1991'><Icon type="github" /></a>
+            <a className='info_link' href='https://www.linkedin.com/in/huan-fu-889557191/'><Icon type="linkedin" /></a>
+          </div>
+          <div className='footer-col'>
+            <h2 className='white_font sub_title'>Where I am</h2>
+            <p className='white_font'>Cambridge, MA 02140</p>
+          </div>
+        </div>
       </div>
     )
   }
