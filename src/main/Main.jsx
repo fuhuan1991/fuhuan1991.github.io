@@ -159,7 +159,7 @@ class Main extends Component {
 
         <h2 className='white_font sub_title'>
           3. MDNote &nbsp;&nbsp;&nbsp;
-          <a className='info_link' href='https://fuhuan1991.github.io/markdown-Note/#/'>Try it!<Icon type="right" /></a>
+          <a className='info_link' href='http://ec2-107-21-147-203.compute-1.amazonaws.com'>Try it!<Icon type="right" /></a>
         </h2>
         <div className='slider'>
           <Carousel ref={node => (this.carousel = node)} autoplay>
@@ -183,9 +183,11 @@ class Main extends Component {
         <hr className='line'/>
         <ul className='list'>
           <li>React</li>
-          <li>Javascript ES6</li>
-          <li>Codemirror</li>
-          <li>IndexedDB</li>
+          <li>Nodejs & Express</li>
+          <li>Javascript ES6 & Typescript</li>
+          <li>AWS Amplify</li>
+          <li>AWS EC2</li>
+          <li>AWS DynamoDB</li>
         </ul>
         <div className='gap'></div>
 
