@@ -237,7 +237,6 @@ class Main extends Component {
 
         <h2 className='white_font sub_title'>
           5. EasyPoll &nbsp;&nbsp;&nbsp;
-          <a className='info_link' href='http://easypoll.us-east-2.elasticbeanstalk.com'>Try it!<Icon type="right" /></a>
         </h2>
         {/* <img src={gameImg} alt='cannot be displayed due to network reasons'></img> */}
         <div className='slider' style={{paddingLeft: '5%', width: '80%'}}>
