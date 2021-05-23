@@ -159,7 +159,7 @@ class Main extends Component {
 
         <h2 className='white_font sub_title'>
           3. MDNote &nbsp;&nbsp;&nbsp;
-          <a className='info_link' href='http://ec2-107-21-147-203.compute-1.amazonaws.com'>Try it!<Icon type="right" /></a>
+          <a className='info_link' href='http://ec2-3-80-18-46.compute-1.amazonaws.com'>Try it!<Icon type="right" /></a>
         </h2>
         <div className='slider'>
           <Carousel ref={node => (this.carousel = node)} autoplay>
